@@ -1,0 +1,13 @@
+# ----------------------------------------------------------------------------
+# enable virtual keyboard
+# ----------------------------------------------------------------------------
+msg " > Enabling virtual keyboard ..."
+
+# do these 2 first
+gsettings set org.gnome.desktop.interface toolkit-accessibility true
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
+
+gsettings set org.onboard.auto-show enabled true
+gsettings set org.onboard.window docking-enabled true
+gsettings set org.onboard.window docking-edge 'bottom'
+gsettings set org.onboard layout '/usr/share/onboard/layouts/Compact.onboard'
